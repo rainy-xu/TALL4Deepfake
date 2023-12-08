@@ -18,22 +18,25 @@ Please refer to https://github.com/IBM/action-recognition-pytorch for how to pre
 
 [IMPORTANT] Edit main.py and change the default arg-parser values according to your convenience (especially the config paths)
 
-CUDA_VISIBLE_DEVICES=0 python main.py --dataset ffpp \
+```CUDA_VISIBLE_DEVICES=0 python main.py --dataset ffpp \
  --input-size 112 --num_clips 8 --output_dir [your_output_dir] --opt adamw --lr 1.5e-5 --warmup-lr 1.5e-8 --min-lr 1.5e-7 \
  --epochs 60 --sched cosine --duration 4 --batch-size 4 --thumbnail_rows 2 --disable_scaleup --cutout True \
  --pretrained --warmup-epochs 10 --no-amp --model TALL_SWIN \
  --hpe_to_token 2>&1 | tee ./output/train_ffpp_`date +'%m_%d-%H_%M'`.log
+```
 
 # Evaluation:
 
+```
 CUDA_VISIBLE_DEVICES=0 python test.py  --dataset ffpp \
  --input_size 112 --opt adamw --lr 1e-4 --epochs 30 --sched cosine --duration 4 --batch-size 4 --thumbnail_rows 2 --disable_scaleup \
  --pretrained --warmup-epochs 5 --no-amp --model TALL_SWIN  \
  --hpe_to_token --initial_checkpoint [model_checkpoint] --eval --num_crops 1 --num_clips 8 \
  2>&1 | tee ./output/test_ffpp_`date +'%m_%d-%H_%M'`.log
-
+```
 # Citation
 
+```
 @inproceedings{xu2023tall,
   title={TALL: Thumbnail Layout for Deepfake Video Detection},
   author={Xu, Yuting and Liang, Jian and Jia, Gengyun and Yang, Ziming and Zhang, Yanhao and He, Ran},
@@ -41,7 +44,7 @@ CUDA_VISIBLE_DEVICES=0 python test.py  --dataset ffpp \
   pages={22658--22668},
   year={2023}
 }
-
+```
 # Contact
 
 - [xuyuting@iie.ia.ac](mailto:xuyuting@iie.ia.ac)
