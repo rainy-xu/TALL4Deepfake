@@ -24,11 +24,11 @@ CUDA_VISIBLE_DEVICES=0 python main.py --dataset ffpp \
  --pretrained --warmup-epochs 10 --no-amp --model TALL_SWIN \
  --hpe_to_token 2>&1 | tee ./output/train_ffpp_`date +'%m_%d-%H_%M'`.log
 
-# Evaluation
+# Evaluation:
 
 CUDA_VISIBLE_DEVICES=0 python test.py  --dataset ffpp \
  --input_size 112 --opt adamw --lr 1e-4 --epochs 30 --sched cosine --duration 4 --batch-size 4 --thumbnail_rows 2 --disable_scaleup \
- --pretrained --warmup-epochs 5 --no-amp --model TALL_SWIN \
+ --pretrained --warmup-epochs 5 --no-amp --model TALL_SWIN  \
  --hpe_to_token --initial_checkpoint [model_checkpoint] --eval --num_crops 1 --num_clips 8 \
  2>&1 | tee ./output/test_ffpp_`date +'%m_%d-%H_%M'`.log
 
