@@ -18,7 +18,8 @@ Please refer to https://github.com/IBM/action-recognition-pytorch for how to pre
 
 [IMPORTANT] Edit main.py and change the default arg-parser values according to your convenience (especially the config paths)
 
-```CUDA_VISIBLE_DEVICES=0 python main.py --dataset ffpp \
+```
+CUDA_VISIBLE_DEVICES=0 python main.py --dataset ffpp \
  --input-size 112 --num_clips 8 --output_dir [your_output_dir] --opt adamw --lr 1.5e-5 --warmup-lr 1.5e-8 --min-lr 1.5e-7 \
  --epochs 60 --sched cosine --duration 4 --batch-size 4 --thumbnail_rows 2 --disable_scaleup --cutout True \
  --pretrained --warmup-epochs 10 --no-amp --model TALL_SWIN \
