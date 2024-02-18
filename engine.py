@@ -131,7 +131,7 @@ def evaluate(data_loader, model, device, world_size, distributed=True, amp=False
             binary_label.append(target.detach().cpu())
         batch_size = images.shape[0]
 
-        acc1, = accuracy(output, target, topk=(1,))
+        acc1 = accuracy(output, target, topk=(1,))[0]
         metric_logger.meters['acc1'].update(acc1.item(), images.size(0))
 
     # import pdb;pdb.set_trace()
