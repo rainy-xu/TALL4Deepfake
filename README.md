@@ -3,7 +3,7 @@
 ## [**[ICCV-2023] Thumbnail Layout for Deepfake Video Detection**](https://openaccess.thecvf.com/content/ICCV2023/papers/Xu_TALL_Thumbnail_Layout_for_Deepfake_Video_Detection_ICCV_2023_paper.pdf)
 
 * 2024.2.18 There is a small error in the version released by ICCV about appendix. We have added the appendix to the text. A revised version of the paper can be found on arXiv(https://arxiv.org/pdf/2307.07494.pdf).
-
+* 2024.3.7  Updated the data preparation code, which is sourced from [FaceForensic](shttps://github.com/ondyari/FaceForensics/blob/master/classification/detect_from_video.py).
 Our implementation is based on [Swin-Transformer](https://github.com/microsoft/Swin-Transformer).
 
 # Requirements
@@ -16,6 +16,20 @@ Our implementation is based on [Swin-Transformer](https://github.com/microsoft/S
 
 # Data Preparation
 Please refer to https://github.com/IBM/action-recognition-pytorch for how to prepare deepfake datasets such as FF++, Celeb-DF, and DFDC.
+
+The data loader can load image sequences stored in txt files in the following format:
+```
+#example for train.txt
+# path    |   start frame | end frame | label
+original_faces_c23/928 1 300 0
+original_faces_c23/712 1 300 0
+original_faces_c23/582 1 300 0
+original_faces_c23/602 1 300 0
+deepfakes_faces_c23/143_140 1 300 1
+deepfakes_faces_c23/408_424 1 300 1
+deepfakes_faces_c23/766_761 1 300 1
+deepfakes_faces_c23/964_174 1 300 1
+```
 
 # Training:
 
