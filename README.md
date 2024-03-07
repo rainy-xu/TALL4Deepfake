@@ -21,7 +21,7 @@ Please refer to https://github.com/IBM/action-recognition-pytorch for how to pre
 The data loader can load image sequences stored in txt files in the following format:
 ```
 #example for train.txt
-# path    |   start frame | end frame | label
+# path  |  start frame | end frame | label
 original_faces_c23/928 1 300 0
 original_faces_c23/712 1 300 0
 original_faces_c23/582 1 300 0
