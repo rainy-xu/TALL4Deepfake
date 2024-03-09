@@ -2,7 +2,7 @@
 
 ## [**[ICCV-2023] Thumbnail Layout for Deepfake Video Detection**](https://openaccess.thecvf.com/content/ICCV2023/papers/Xu_TALL_Thumbnail_Layout_for_Deepfake_Video_Detection_ICCV_2023_paper.pdf)
 
-* 2024.2.18 There is a small error in the version released by ICCV about appendix. We have added the appendix to the text. A revised version of the paper can be found on arXiv(https://arxiv.org/pdf/2307.07494.pdf).
+* 2024.2.18 There is a small error in the version released by ICCV about appendix. We have added the appendix to the text. A revised version of the paper can be found on [arXiv(https://arxiv.org/pdf/2307.07494.pdf)].
 * 2024.3.7  Updated the data preparation code, which is sourced from [FaceForensic](https://github.com/ondyari/FaceForensics/blob/master/classification/detect_from_video.py).
 
 Our implementation is based on [Swin-Transformer](https://github.com/microsoft/Swin-Transformer).
