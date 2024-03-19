@@ -2,11 +2,14 @@
 
 ## [**[ICCV-2023] Thumbnail Layout for Deepfake Video Detection**](https://openaccess.thecvf.com/content/ICCV2023/papers/Xu_TALL_Thumbnail_Layout_for_Deepfake_Video_Detection_ICCV_2023_paper.pdf)
 
+## [**[IJCV-2024] Towards Generalizable Deepfake Video Detection with Thumbnail Layout and Graph Reasoning**](https://arxiv.org/pdf/2403.10261.pdf)
+
+
 * 2024.3.8  :tada:The improved version TALL++ has been accepted by IJCV2024!
 * 2024.3.7  Updated the data preparation code, which is sourced from [FaceForensic](https://github.com/ondyari/FaceForensics/blob/master/classification/detect_from_video.py).
 * 2024.2.18 There is a small error in the version released by ICCV about appendix. We have added the appendix to the text. A revised version of the paper can be found on [arXiv](https://arxiv.org/pdf/2307.07494.pdf).
 
-# Attention: The code for our improved IJCV extension (TALL++, https://arxiv.org/pdf/2403.10261.pdf ) will be made available in this repository.
+## Attention: The code for our improved IJCV extension (TALL++, https://arxiv.org/pdf/2403.10261.pdf ) will be made available in this repository.
 
 Our implementation is based on [Swin-Transformer](https://github.com/microsoft/Swin-Transformer).
 
