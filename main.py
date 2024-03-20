@@ -43,7 +43,7 @@ def get_args_parser():
     parser.add_argument('--dataset', default='ffpp_train',
                         choices=list(DATASET_CONFIG.keys()), help='path to dataset file list')
     parser.add_argument('--duration', default=8, type=int, help='number of frames')
-    parser.add_argument('--frames_per_group', default=3, type=int,
+    parser.add_argument('--frames_per_group', default=1, type=int,
                         help='[uniform sampling] number of frames per group; '
                              '[dense sampling]: sampling frequency')
     parser.add_argument('--threed_data', default=False, help='load data in the layout for 3D conv')
