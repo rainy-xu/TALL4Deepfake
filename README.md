@@ -2,7 +2,7 @@
 
 ## [**[ICCV-2023] Thumbnail Layout for Deepfake Video Detection**](https://openaccess.thecvf.com/content/ICCV2023/papers/Xu_TALL_Thumbnail_Layout_for_Deepfake_Video_Detection_ICCV_2023_paper.pdf)
 
-## [**[IJCV-2024] Towards Generalizable Deepfake Video Detection with Thumbnail Layout and Graph Reasoning**](https://arxiv.org/pdf/2403.10261.pdf)
+## [**[IJCV-2024] Learning Spatiotemporal Inconsistency via Thumbnail Layout for Face Deepfake Detection**](https://arxiv.org/pdf/2403.10261.pdf)
 
 
 * 2024.3.8  :tada:The improved version TALL++ has been accepted by IJCV2024!
