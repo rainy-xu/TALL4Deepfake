@@ -6,7 +6,7 @@
 
 
 * 2024.3.8  :tada:The improved version TALL++ has been accepted by IJCV2024!
-* 2024.3.7  Updated the data preparation code, which is sourced from [FaceForensic](https://github.com/ondyari/FaceForensics/blob/master/classification/detect_from_video.py).
+* 2024.3.7  Updated the basic data preparation code, which is sourced from [FaceForensic](https://github.com/ondyari/FaceForensics/blob/master/classification/detect_from_video.py).
 * 2024.2.18 There is a small error in the version released by ICCV about appendix. We have added the appendix to the text. A revised version of the paper can be found on [arXiv](https://arxiv.org/pdf/2307.07494.pdf).
 
 ## Attention: The code for our improved IJCV extension (TALL++, https://arxiv.org/pdf/2403.10261.pdf ) will be made available in this repository.
