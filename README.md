@@ -22,7 +22,7 @@ Our implementation is based on [Swin-Transformer](https://github.com/microsoft/S
  - torchvision==0.14.1
 
 # Data Preparation
-Please refer to https://github.com/IBM/action-recognition-pytorch for how to prepare deepfake datasets such as FF++, Celeb-DF, and DFDC.
+Please refer to [FaceForensic](https://github.com/ondyari/FaceForensics/blob/master/classification/detect_from_video.py) for how to prepare deepfake datasets such as FF++, Celeb-DF, and DFDC.
 
 The data loader can load image sequences stored in txt files in the following format:
 ```
@@ -73,4 +73,3 @@ CUDA_VISIBLE_DEVICES=0 python test.py  --dataset ffpp \
 # Contact
 
 - [xuyuting@iie.ia.ac](mailto:xuyuting@iie.ia.ac)
-- [liangjian92@gmail.com](mailto:liangjian92@gmail.com)
